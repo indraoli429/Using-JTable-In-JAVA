@@ -1,0 +1,22 @@
+public void method(){
+        String[] options = new String[3];
+        options[0] = "Delete";
+        options[1] = "Update";
+        options[2] = "Cancel";
+        int input;
+        input = JOptionPane.showOptionDialog(display,"What you want to do?","Question", 0,JOptionPane.INFORMATION_MESSAGE,null,options,null);
+        
+        // 0=yes, 1=no, 2=cancel
+        if (input == JOptionPane.YES_OPTION) {
+            //do something
+        } 
+        
+        else if (input==JOptionPane.NO_OPTION){
+          //no option
+           //Do something
+        }
+        else if (input==JOptionPane.CANCEL_OPTION){
+                // cancel option
+            JOptionPane.showMessageDialog(display, "NO thanks.");
+        }
+    }
